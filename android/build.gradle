@@ -3,6 +3,7 @@ buildscript {
     repositories {
         google()
         jcenter()
+		maven { url "https://jitpack.io" }
     }
 
     dependencies {
@@ -32,7 +33,7 @@ repositories {
 }
 
 dependencies {
-    implementation 'com.google.guava:guava:20.0'
+    implementation 'com.google.guava:guava:31.1-android'
     implementation 'com.facebook.react:react-native:+'
-    implementation fileTree(dir: 'libs', include: ['usbserial-6.0.5-release.aar'])
+    implementation 'com.github.felHR85:UsbSerial:6.1.0'
 }
